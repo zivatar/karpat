@@ -22,6 +22,6 @@ Dummy.MAIN_IMG = [
 ];
 
 Dummy.ARTICLE = {
-	aggtelek: "Aggtelek",
-	josvafo: "Jósvafő"
+	aggtelek: {title: "Aggtelek", text: "klk"},
+	josvafo: {title: "Jósvafő", text: "jjkjk"}
 }
