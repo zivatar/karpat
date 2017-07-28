@@ -5,7 +5,7 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.mainCtrl',
   'myApp.mainPage',
-  'myApp.view2',
+  'myApp.article',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
