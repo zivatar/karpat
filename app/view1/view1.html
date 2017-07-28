@@ -1,3 +1,12 @@
-<div id="main-page-images">
-	kjl
+<div id="main-page-images" class="row">
+	<div class="col-sm-4" ng-repeat="image in Dummy.MAIN_IMG">
+	<div class="panel panel-default" >
+  <div class="panel-heading">
+    <h3 class="panel-title">{{image.text}}</h3>
+  </div>
+  <div class="panel-body">
+    <img ng-src="{{image.url}}" width="80%">
+  </div>
+</div>
+</div>
 </div>

@@ -14,3 +14,9 @@ Dummy.MENU = [
 		]
 	}
 ];
+
+Dummy.MAIN_IMG = [
+	{text: "Bányák", url: "http://www.karpat-medence.hu/img/ikonok_fooldal/banyak1.jpg"},
+	{text: "Barlangok", url: "http://www.karpat-medence.hu/img/ikonok_fooldal/barlangok1.jpg"},
+	{text: "Geodéziai mérőtornyok", url: "http://www.karpat-medence.hu/img/ikonok_fooldal/geodeziai-merotornyok1.jpg"}
+];

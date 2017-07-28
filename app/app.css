@@ -35,3 +35,12 @@ div.tartalom {
 }
 
 /* MAIN PAGE */
+
+.panel {
+	text-align: center;
+}
+
+.panel img {
+	box-shadow: 0 0 10px #888888;
+	border-radius: 0px;
+}
