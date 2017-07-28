@@ -30,3 +30,19 @@ nav.navbar-inverse {
 	border-radius: 0;
 	background-image: linear-gradient(to bottom,#594433 0,#2f241b 100%);
 }
+
+body {
+    background-color: #A68C69;
+}
+
+div.tartalom {
+  max-width: 1261px;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: #F0E5C9;
+  background-image: url("karpatfejlec_aggtelek.jpg");
+  padding-top: 150px;
+  background-repeat: no-repeat;
+  border: #F1BE13 solid 2px;
+  border-radius: 20px;
+}
