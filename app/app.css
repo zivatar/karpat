@@ -1,32 +1,14 @@
-/* app css stylesheet */
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
-}
-
-.menu:before {
-  content: "[";
-}
-
-.menu:after {
-  content: "]";
-}
-
-.menu > li {
-  display: inline;
-}
-
-.menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
-
+/* COMMON ELEMENTS */
 
 nav.navbar-inverse {
 	border-bottom: 2px solid #F1BE13;
 	border-radius: 0;
+	height: 50px;
 	background-image: linear-gradient(to bottom,#594433 0,#2f241b 100%);
 }
+
+body {
+	padding-top: 50px;
+}
+
+/* MAIN PAGE */
