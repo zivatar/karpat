@@ -23,3 +23,10 @@
   content: "|";
   padding-right: 0.3em;
 }
+
+
+nav.navbar-inverse {
+	border-bottom: 2px solid #F1BE13;
+	border-radius: 0;
+	background-image: linear-gradient(to bottom,#594433 0,#2f241b 100%);
+}
