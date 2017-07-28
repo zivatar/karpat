@@ -19,20 +19,19 @@ div.tartalom, div.sidebar {
 	background-color: #F0E5C9;
 	border: #F1BE13 solid 2px;
   border-radius: 20px;
+  padding: 30px;
 }
 
 div.sidebar {
 	padding: 30px;
+	max-width: 600px;
 }
 
 div.tartalom {
   max-width: 1261px;
   background-image: url("karpatfejlec_aggtelek.jpg");
   padding-top: 270px;
-  padding-left: 30px;
-  padding-right: 30px;
   background-repeat: no-repeat;
-  
 }
 
 /* MAIN PAGE */
