@@ -53,25 +53,22 @@
             <li ng-repeat="submenu in menu.submenu"><a href="">{{submenu.text}}</a></li>
           </ul>
         </li>
+        <li><a href="#!/view2">view2</a></li>
       </ul>
     </div>
   </nav>
 
-  {{main}}
-  <ul class="menu">
-    <li><a href="#!/">view1</a></li>
-    <li><a href="#!/view2">view2</a></li>
-  </ul>
-
-  <div ng-view></div>
-
   <div id="container" class="row">
   	<div class="col-sm-10">
   		<div class="tartalom">
-  			
+  			<div ng-view></div>
   		</div>
   	</div>
-  	<div class="col-sm-2">.col-sm-2</div>
+  	<div class="col-sm-2">
+      <div class="sidebar">
+        jfdkjfddkf ldkfld ldfld
+      </div>
+    </div>
   </div>
   
 </body>
