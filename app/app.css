@@ -37,6 +37,26 @@ div.tartalom {
   box-shadow: 0 0 20px #2f241b;
 }
 
+.loader-out {
+	width: 100%;
+	height: 120px;
+}
+
+.loader-in {
+    border: 16px solid #f3f3f3; /* bg */
+    border-top: 16px solid #F1BE13; /* fg */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 /* MAIN PAGE */
 
 .panel {
@@ -47,4 +67,24 @@ div.tartalom {
 	box-shadow: 0 0 10px #888888;
 	border-radius: 0px;
 	border: 4px solid white;
+}
+
+.badge {
+    display: inline-block;
+    margin: 5px;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.badge img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
 }

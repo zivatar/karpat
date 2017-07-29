@@ -9,6 +9,6 @@ angular.module('myApp.mainPage', ['ngRoute'])
   });
 }])
 
-.controller('mainPageCtrl', [function() {
+.controller('mainPageCtrl', ['$scope', function($scope) {
 
 }]);

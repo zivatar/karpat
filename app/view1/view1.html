@@ -1,4 +1,15 @@
-<div id="main-page-images" class="row">
+
+
+<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#main-page-hot-articles">Legújabb cikkek</button>
+<div id="main-page-hot-articles" class="collapse in">
+	<a ng-repeat="article in Dummy.ARTICLE" href="{{article.url}}"><div class="badge">
+		<img ng-src="{{article.img}}" alt="{{article.text}}">
+		{{article.title}}
+	</div></a>
+</div>
+
+<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#main-page-images">Kategóriák</button>
+<div id="main-page-images" class="row collapse in">
 	<div class="col-sm-4" ng-repeat="image in Dummy.MAIN_IMG">
 	<div class="panel panel-default" >
   <div class="panel-heading">
