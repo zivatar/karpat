@@ -1,7 +1,7 @@
 
 
 <button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#main-page-hot-articles">Legújabb cikkek</button>
-<div id="main-page-hot-articles" class="collapse in">
+<div id="main-page-hot-articles" class="main-page-group collapse in">
 	<a ng-repeat="article in Dummy.ARTICLE" href="{{article.url}}"><div class="badge">
 		<img ng-src="{{article.img}}" alt="{{article.text}}">
 		{{article.title}}
@@ -10,7 +10,7 @@
 
 
 <button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#main-page-hot-comments">Legújabb hozzászólások</button>
-<div id="main-page-hot-comments">
+<div id="main-page-hot-comments" class="main-page-group collapse in">
 	<div class="comment" ng-repeat="comment in Dummy.COMMENTS">
 		<img ng-src="{{gravatarize(comment.email)}}">
 		{{comment.name}}, {{comment.date}}:<span class="pull-right link">{{comment.articleTitle}}<span class="glyphicon glyphicon-link"></span></span><br>
@@ -21,15 +21,9 @@
 
 
 <button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#main-page-images">Kategóriák</button>
-<div id="main-page-images" class="row collapse in">
-	<div class="col-sm-4" ng-repeat="image in Dummy.MAIN_IMG">
-	<div class="panel panel-default" >
-  <div class="panel-heading">
-    <h3 class="panel-title">{{image.text}}</h3>
-  </div>
-  <div class="panel-body">
-    <img ng-src="{{image.url}}" width="80%">
-  </div>
-</div>
-</div>
+<div id="main-page-images" class="row collapse in main-page-group">
+	<div class="col-xs-12 col-sm-6 col-lg-4 main-page-image" ng-repeat="image in Dummy.MAIN_IMG">
+    	<img ng-src="{{image.url}}" width="80%">
+    	<h3 class="panel-title">{{image.text}}</h3>
+  	</div>
 </div>
