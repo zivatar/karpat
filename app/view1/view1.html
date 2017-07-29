@@ -13,7 +13,7 @@
 <div id="main-page-hot-comments">
 	<div class="comment" ng-repeat="comment in Dummy.COMMENTS">
 		<img ng-src="{{gravatarize(comment.email)}}">
-		{{comment.name}}, {{comment.date}}:<br>
+		{{comment.name}}, {{comment.date}}:<span class="pull-right link">{{comment.articleTitle}}<span class="glyphicon glyphicon-link"></span></span><br>
 		<em>{{comment.text}}</em>
 	</div>
 </div>

@@ -36,7 +36,7 @@ Dummy.ARTICLE = {
 };
 
 Dummy.COMMENTS = [
-	{name: "jozsi", date: "2015.01.01. 12:12", text: "vjvjdo pdovjvdp vdpoj vpdojdv pdoj vdopvjd povjd opv djvdp odv djopdv dopdj vdpojdjv dpo vjdopvdj odjv dopodpvj dpdov dpvdo", email: "macgyver1024@gmail.com"},
-	{name: "jozsi", date: "2015.01.01. 12:12", text: "vjvjdo pdovjvdp vdpoj vpdojdv pdoj vdopvjd povjd opv djvdp odv djopdv dopdj vdpojdjv dpo vjdopvdj odjv dopodpvj dpdov dpvdo", email: "macgyver1023@gmail.com"},
-	{name: "jozsi", date: "2015.01.01. 12:12", text: "vjvjdo pdovjvdp vdpoj vpdojdv pdoj vdopvjd povjd opv djvdp odvdjopdv dopdj vdpojdjv dpo vjdopvdj odjv dopodpvj dpdov dpvdo", email: ""},
+	{name: "jozsi", date: "2015.01.01. 12:12", text: "vjvjdo pdovjvdp vdpoj vpdojdv pdoj vdopvjd povjd opv djvdp odv djopdv dopdj vdpojdjv dpo vjdopvdj odjv dopodpvj dpdov dpvdo", email: "macgyver1024@gmail.com", url:"http://localhost:8000/#!/cikk/aggtelek", articleTitle:"Halott ejtőernyősök emlékműve"},
+	{name: "jozsi", date: "2015.01.01. 12:12", text: "vjvjdo pdovjvdp vdpoj vpdojdv pdoj vdopvjd povjd opv djvdp odv djopdv dopdj vdpojdjv dpo vjdopvdj odjv dopodpvj dpdov dpvdo", email: "macgyver1023@gmail.com", url:"http://localhost:8000/#!/cikk/aggtelek", articleTitle:"Óbudai esernyős szobor"},
+	{name: "jozsi", date: "2015.01.01. 12:12", text: "vjvjdo pdovjvdp vdpoj vpdojdv pdoj vdopvjd povjd opv djvdp odvdjopdv dopdj vdpojdjv dpo vjdopvdj odjv dopodpvj dpdov dpvdo", email: "", url:"http://localhost:8000/#!/cikk/aggtelek", articleTitle:"Aggtelek"},
 ];
