@@ -88,3 +88,15 @@ div.tartalom {
     width: 50px;
     border-radius: 50%;
 }
+
+.comment {
+	background-color: #f1f1f1;
+	margin: 5px;
+	padding: 5px;
+	border-left: 4px solid #594433;
+}
+
+.comment img {
+	border-radius: 5px;
+}
+.comment 

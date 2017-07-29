@@ -8,6 +8,18 @@
 	</div></a>
 </div>
 
+
+<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#main-page-hot-comments">Legújabb hozzászólások</button>
+<div id="main-page-hot-comments">
+	<div class="comment" ng-repeat="comment in Dummy.COMMENTS">
+		<img ng-src="{{gravatarize(comment.email)}}">
+		{{comment.name}}, {{comment.date}}:<br>
+		<em>{{comment.text}}</em>
+	</div>
+</div>
+
+
+
 <button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#main-page-images">Kategóriák</button>
 <div id="main-page-images" class="row collapse in">
 	<div class="col-sm-4" ng-repeat="image in Dummy.MAIN_IMG">
