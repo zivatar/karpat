@@ -1,6 +1,7 @@
 Constant = {};
 
 Constant.PAGE_NAME = "Kárpát-medence útikönyv";
+Constant.API_URL = "http://www.zivatar.hu/api.php";
 
 Dummy = {};
 
