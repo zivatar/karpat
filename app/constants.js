@@ -2,6 +2,12 @@ Constant = {};
 
 Constant.PAGE_NAME = "Kárpát-medence útikönyv";
 Constant.API_URL = "http://www.zivatar.hu/api.php";
+Constant.state = {
+	BEFORE_REQUEST: "before_request",
+	WAITING: "waiting",
+	HAVE_DATA: "have_data",
+	NO_DATA: "no_data"
+}
 
 Dummy = {};
 
@@ -28,7 +34,7 @@ Dummy.ARTICLE = {
 		mID: 'pest', 
 		cityID: 'miskolc', 
 		createdDate: Date.now(), 
-		modifiedDate: Date.npw(), 
+		modifiedDate: Date.now(), 
 		user: {name: "jannesz", email: "hagelgewitter@gmail.com"}, 
 		coordinate: {lat: 47, lon: 19}, 
 		comments: [

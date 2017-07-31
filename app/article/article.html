@@ -1,8 +1,13 @@
-<h2>{{currentArticle.title}}</h2>
-
-<p>{{currentArticle.text}}</p>
-
-<div class="loader-out">
+<div class="loader-out" ng-show="currentState == Constant.state.WAITING">
 	<div class="loader-in">
 	</div>
+</div>
+
+<div class="article-no-data" ng-show="currentState == Constant.NO_DATA">
+	<p>Nincs adat.</p>
+</div>
+
+<div class="article-main" ng-show="currentState == Constant.state.HAVE_DATA">
+	<h2>{{currentArticle.title}}</h2>
+	<p>{{currentArticle.text}}</p>
 </div>
