@@ -28,7 +28,7 @@ Dummy.ARTICLE = {
 		mID: 'pest', 
 		cityID: 'miskolc', 
 		createdDate: Date.now(), 
-		modifiedDate: Date.npw(), 
+		modifiedDate: Date.now(), 
 		user: {name: "jannesz", email: "hagelgewitter@gmail.com"}, 
 		coordinate: {lat: 47, lon: 19}, 
 		comments: [
