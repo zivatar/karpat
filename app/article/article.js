@@ -11,23 +11,24 @@ angular.module('myApp.article', ['ngRoute'])
 
 .controller('articleCtrl', ['$routeParams', '$scope', '$http', function($routeParams, $scope, $http) {
 	var id = $routeParams.id;
-	$scope.currentArticle = Dummy.ARTICLE[id];
-	$scope.currentState = Constant.state.HAVE_DATA; // Constant.state.BEFORE_REQUEST;
+	$scope.currentArticle = null;
+	$scope.currentState = Constant.state.BEFORE_REQUEST;
 
-	$scope.getCategories = function() {
+	$scope.getCategories = function(id) {
 		$scope.currentState = Constant.state.WAITING;
 		$http({
   			method: 'GET',
-  			url: Constant.API_URL + '?action=categories'
+  			url: Constant.API_URL + '?action=article&id=' + id
 		}).then(function successCallback(response) {
-    		$rootScope.categories = response.data;
-    		console.log($rootScope.categories);
+    		$scope.currentArticle = response.data;
+    		$scope.currentState = Constant.state.HAVE_DATA;
+    		console.log("have_data");
   		}, function errorCallback(response) {
-    		// called asynchronously if an error occurs
-    		// or server returns response with an error status.
+    		$scope.currentState = Constant.state.NO_DATA;
+    		console.log("no_data");
   		});
 	};
 
-	//$scope.getCategories();
+	$scope.getCategories();
 
 }]);
