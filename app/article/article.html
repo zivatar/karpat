@@ -9,5 +9,10 @@
 
 <div class="article-main" ng-show="currentState == Constant.state.HAVE_DATA">
 	<h2>{{currentArticle.title}}</h2>
+	<div>
+		<img ng-src="{{currentArticle.img}}" alt="{{currentArticle.text}}">
+	</div>
+
 	<p>{{currentArticle.text}}</p>
+
 </div>
