@@ -29,6 +29,6 @@ angular.module('myApp.article', ['ngRoute'])
   		});
 	};
 
-	$scope.getCategories();
+	$scope.getCategories(id);
 
 }]);
