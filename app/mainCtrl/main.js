@@ -13,7 +13,6 @@ angular.module('myApp.mainCtrl', [])
   			url: Constant.API_URL + '?action=categories'
 		}).then(function successCallback(response) {
     		$rootScope.categories = response.data;
-    		console.log($rootScope.categories);
   		}, function errorCallback(response) {
     		// called asynchronously if an error occurs
     		// or server returns response with an error status.

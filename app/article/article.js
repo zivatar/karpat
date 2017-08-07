@@ -14,7 +14,7 @@ angular.module('myApp.article', ['ngRoute'])
 	$scope.currentArticle = null;
 	$scope.currentState = Constant.state.BEFORE_REQUEST;
 
-	$scope.getCategories = function(id) {
+	$scope.getArticle = function(id) {
 		$scope.currentState = Constant.state.WAITING;
 		$http({
   			method: 'GET',
@@ -29,6 +29,6 @@ angular.module('myApp.article', ['ngRoute'])
   		});
 	};
 
-	$scope.getCategories(id);
+	$scope.getArticle(id);
 
 }]);

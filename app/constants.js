@@ -2,6 +2,9 @@ Constant = {};
 
 Constant.PAGE_NAME = "Kárpát-medence útikönyv";
 Constant.API_URL = "http://www.zivatar.hu/api.php";
+Constant.API_ENDPOINT = {
+	RECENT_ARTICLES: "recent-articles"
+};
 Constant.state = {
 	BEFORE_REQUEST: "before_request",
 	WAITING: "waiting",
@@ -32,6 +35,10 @@ Constant.sideBar = [
 ]
 
 Dummy = {};
+
+Dummy.LATEST_ARTICLES = [
+	{url: "aggtelek", text: "Aggtelek2", url:"http://localhost:8000/#!/cikk/aggtelek", img: "http://www.karpat-medence.hu/img/ikonok_fooldal/barlangok1.jpg", title: "Aggtlel"}
+];
 
 Dummy.MAIN_IMG = [
 	{text: "Bányák", url: "http://www.karpat-medence.hu/img/ikonok_fooldal/banyak_212px.jpg"},
