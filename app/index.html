@@ -53,8 +53,6 @@
             <li ng-repeat="submenu in menu.submenu"><a href="">{{submenu.text}}</a></li>
           </ul>
         </li>
-        <li><a href="#!/cikk/aggtelek">Aggtelek</a></li>
-        <li><a href="#!/cikk/josvafo">Jósvafő</a></li>
       </ul>
     </div>
   </nav>
@@ -66,8 +64,9 @@
   		</div>
   	</div>
   	<div class="col-sm-2">
-      <div class="sidebar">
-        jfdkjfddkf ldkfld ldfld
+      <div class="sidebar" ng-repeat="sidebar in Constant.sideBar">
+        <h4>{{sidebar.title}}</h4>
+        <span ng-repeat="elem in sidebar.elem"><span class="glyphicon glyphicon-{{elem.glyphicon}}" ng-show="!!elem.glyphicon"></span> {{elem.text}}<br></span>
       </div>
     </div>
   </div>

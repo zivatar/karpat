@@ -7,7 +7,29 @@ Constant.state = {
 	WAITING: "waiting",
 	HAVE_DATA: "have_data",
 	NO_DATA: "no_data"
-}
+};
+Constant.sideBar = [
+	{
+		title: "Gyorslinkek",
+		elem: [
+			{glyphicon: "camera", text: "Fényképtár"},
+			{glyphicon: "list-alt", text: "Összes cikk"},
+			{glyphicon: "user", text: "Bejelentkezés"}
+		]
+	}, {
+		title: "Zivatar.hu",
+		elem: [
+			{glyphicon: "edit", text: "Blog"},
+			{glyphicon: "heart", text: "Kedvenc cikkek"}
+		]
+	}, {
+		title: "Csabai chili",
+		elem: [
+			{glyphicon: "edit", text: "Blog"},
+			{glyphicon: "camera", text: "Fotók"}
+		]
+	}
+]
 
 Dummy = {};
 

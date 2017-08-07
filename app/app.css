@@ -88,6 +88,10 @@ div.tartalom {
 	z-index: 200;
 }
 
+.sidebar {
+	margin-bottom: 10px;
+}
+
 .panel {
 	text-align: center;
 }
