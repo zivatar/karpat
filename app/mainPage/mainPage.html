@@ -2,8 +2,8 @@
 
 <button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#main-page-hot-articles" ng-show="!!recentArticles">Legújabb cikkek</button>
 <div id="main-page-hot-articles" class="main-page-group collapse in">
-	<a ng-repeat="article in recentArticles" href="{{article.url}}"><div class="badge">
-		<img ng-src="{{article.img}}" alt="{{article.text}}">
+	<a ng-repeat="article in recentArticles" href="#!/cikk/{{article.url}}"><div class="badge">
+		<img ng-src="{{article.img}}" alt="{{article.title}}" ng-if="{{article.img}}"> 
 		{{article.title}}
 	</div></a>
 </div>
