@@ -15,7 +15,19 @@ function getCategories($mysqli) {
 	return $myArray;
 }
 
-$ENDPOINT = array( "categories" );
+function getRecentArticles($mysqli) {
+	$myArray = array();
+	$sql = 'SELECT `url` AS `url`, `cim` AS `title` FROM `tartalom` WHERE `kesz` = 1 ORDER BY `modositas` DESC LIMIT 0 , 10';
+	if ($result = $mysqli->query($sql)) {
+		while($row = $result->fetch_array(MYSQL_ASSOC)) {
+			$myArray[] = $row;
+		}
+	}
+	$result->close();
+	return $myArray;
+}
+
+$ENDPOINT = array( "categories", "recent-articles" );
 $ERROR_MSG = "Something went wrong.";
 $value = array();
 
@@ -27,12 +39,14 @@ if (isset($_GET["action"]) && in_array($_GET["action"], $ENDPOINT)) {
 		case "categories":
 			$value = getCategories($link);
 			break;
+		case "recent-articles":
+			$value = getRecentArticles($link);
+			break;
 	}
 }
 
 if (!$value) {
-  http_response_code(404); // TODO undefined
-  die(mysqli_error());
+  header(':', true, 404);
 }
 
 mysqli_close($link);
