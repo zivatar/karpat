@@ -3,7 +3,8 @@ Constant = {};
 Constant.PAGE_NAME = "Kárpát-medence útikönyv";
 Constant.API_URL = "http://www.zivatar.hu/api.php";
 Constant.API_ENDPOINT = {
-	RECENT_ARTICLES: "recent-articles"
+	RECENT_ARTICLES: "recent-articles",
+	ARTICLE_TYPES: "article-types"
 };
 Constant.state = {
 	BEFORE_REQUEST: "before_request",

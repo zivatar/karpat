@@ -28,6 +28,18 @@ angular.module('myApp.mainPage', ['ngRoute'])
   		});
 	};
 
+	$scope.getArticleTypes = function() {
+		$http({
+			method: 'GET',
+			url: Constant.API_URL + '?action=' + Constant.API_ENDPOINT.ARTICLE_TYPES
+		}).then(function successCallback(response) {
+			$scope.articleTypes = response.data;
+		}, function errorCallback(response) {
+			//
+		});
+	};
+
 	$scope.getRecentArticles();
+	$scope.getArticleTypes();
 
 }]);

@@ -27,7 +27,19 @@ function getRecentArticles($mysqli) {
 	return $myArray;
 }
 
-$ENDPOINT = array( "categories", "recent-articles" );
+function getArticleTypes($mysqli) {
+	$myArray = array();
+	$sql = 'SELECT `menu_url` AS `url`, `menu_nev` AS `title` FROM `menu` WHERE `subject_id` = 1 OR `subject_id` = 2 ORDER BY `menu_nev` ASC LIMIT 0 , 20';
+	if ($result = $mysqli->query($sql)) {
+		while($row = $result->fetch_array(MYSQL_ASSOC)) {
+			$myArray[] = $row;
+		}
+	}
+	$result->close();
+	return $myArray;
+}
+
+$ENDPOINT = array( "categories", "recent-articles", "article-types" );
 $ERROR_MSG = "Something went wrong.";
 $value = array();
 
@@ -41,6 +53,9 @@ if (isset($_GET["action"]) && in_array($_GET["action"], $ENDPOINT)) {
 			break;
 		case "recent-articles":
 			$value = getRecentArticles($link);
+			break;
+		case "article-types":
+			$value = getArticleTypes($link);
 			break;
 	}
 }
